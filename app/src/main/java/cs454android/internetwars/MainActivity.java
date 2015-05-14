@@ -61,16 +61,17 @@ public class MainActivity extends ActionBarActivity {
             Clicking on any of the imageCard buttons will alternate
             between adding or subtracting the cards value to myTotalCardValue
             depending on whether the card is selected or not.
-            btnSubmit's text is then updated.
         */
         imageCard[0].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (hand[0].getSelected()) {
                     myTotalCardValue -= hand[0].getRank();
+                    imageCard[0].getBackground().setAlpha(255);
                     hand[0].setSelected(false);
                 } else {
                     myTotalCardValue += hand[0].getRank();
+                    imageCard[0].getBackground().setAlpha(100);
                     hand[0].setSelected(true);
                 }
                 btnSubmit.setText("Submit: " + myTotalCardValue);
@@ -82,9 +83,11 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 if (hand[1].getSelected()) {
                     myTotalCardValue -= hand[1].getRank();
+                    imageCard[1].getBackground().setAlpha(255);
                     hand[1].setSelected(false);
                 } else {
                     myTotalCardValue += hand[1].getRank();
+                    imageCard[1].getBackground().setAlpha(100);
                     hand[1].setSelected(true);
                 }
                 btnSubmit.setText("Submit: " + myTotalCardValue);
@@ -95,9 +98,11 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 if (hand[2].getSelected()) {
                     myTotalCardValue -= hand[2].getRank();
+                    imageCard[2].getBackground().setAlpha(255);
                     hand[2].setSelected(false);
                 } else {
                     myTotalCardValue += hand[2].getRank();
+                    imageCard[2].getBackground().setAlpha(100);
                     hand[2].setSelected(true);
                 }
                 btnSubmit.setText("Submit: " + myTotalCardValue);
@@ -108,9 +113,11 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 if (hand[3].getSelected()) {
                     myTotalCardValue -= hand[3].getRank();
+                    imageCard[3].getBackground().setAlpha(255);
                     hand[3].setSelected(false);
                 } else {
                     myTotalCardValue += hand[3].getRank();
+                    imageCard[3].getBackground().setAlpha(100);
                     hand[3].setSelected(true);
                 }
                 btnSubmit.setText("Submit: " + myTotalCardValue);
@@ -121,9 +128,11 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 if (hand[4].getSelected()) {
                     myTotalCardValue -= hand[4].getRank();
+                    imageCard[4].getBackground().setAlpha(255);
                     hand[4].setSelected(false);
                 } else {
                     myTotalCardValue += hand[4].getRank();
+                    imageCard[4].getBackground().setAlpha(100);
                     hand[4].setSelected(true);
                 }
                 btnSubmit.setText("Submit: " + myTotalCardValue);
@@ -134,9 +143,11 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 if (hand[5].getSelected()) {
                     myTotalCardValue -= hand[5].getRank();
+                    imageCard[5].getBackground().setAlpha(255);
                     hand[5].setSelected(false);
                 } else {
                     myTotalCardValue += hand[5].getRank();
+                    imageCard[5].getBackground().setAlpha(100);
                     hand[5].setSelected(true);
                 }
                 btnSubmit.setText("Submit: " + myTotalCardValue);
@@ -147,9 +158,11 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 if (hand[6].getSelected()) {
                     myTotalCardValue -= hand[6].getRank();
+                    imageCard[6].getBackground().setAlpha(255);
                     hand[6].setSelected(false);
                 } else {
                     myTotalCardValue += hand[6].getRank();
+                    imageCard[6].getBackground().setAlpha(100);
                     hand[6].setSelected(true);
                 }
                 btnSubmit.setText("Submit: " + myTotalCardValue);
@@ -160,9 +173,11 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 if (hand[7].getSelected()) {
                     myTotalCardValue -= hand[7].getRank();
+                    imageCard[7].getBackground().setAlpha(255);
                     hand[7].setSelected(false);
                 } else {
                     myTotalCardValue += hand[7].getRank();
+                    imageCard[7].getBackground().setAlpha(100);
                     hand[7].setSelected(true);
                 }
                 btnSubmit.setText("Submit: " + myTotalCardValue);
